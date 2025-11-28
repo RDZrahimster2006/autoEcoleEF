@@ -28,21 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eleveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gererToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vehiculeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leconToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.validerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gererToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bdgSourceEleve = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -56,7 +53,7 @@
             this.leconToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,7 +62,7 @@
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(78, 30);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -79,9 +76,15 @@
             this.eleveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gererToolStripMenuItem1});
             this.eleveToolStripMenuItem.Name = "eleveToolStripMenuItem";
-            this.eleveToolStripMenuItem.Size = new System.Drawing.Size(68, 29);
+            this.eleveToolStripMenuItem.Size = new System.Drawing.Size(68, 30);
             this.eleveToolStripMenuItem.Text = "Eleve";
-            this.eleveToolStripMenuItem.Click += new System.EventHandler(this.eleveToolStripMenuItem_Click);
+            // 
+            // gererToolStripMenuItem1
+            // 
+            this.gererToolStripMenuItem1.Name = "gererToolStripMenuItem1";
+            this.gererToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.gererToolStripMenuItem1.Text = "Gerer";
+            this.gererToolStripMenuItem1.Click += new System.EventHandler(this.gererToolStripMenuItem1_Click);
             // 
             // vehiculeToolStripMenuItem
             // 
@@ -89,7 +92,7 @@
             this.gererToolStripMenuItem,
             this.listeToolStripMenuItem});
             this.vehiculeToolStripMenuItem.Name = "vehiculeToolStripMenuItem";
-            this.vehiculeToolStripMenuItem.Size = new System.Drawing.Size(97, 29);
+            this.vehiculeToolStripMenuItem.Size = new System.Drawing.Size(97, 30);
             this.vehiculeToolStripMenuItem.Text = "Vehicule ";
             // 
             // gererToolStripMenuItem
@@ -110,7 +113,7 @@
             this.ajouterToolStripMenuItem,
             this.validerToolStripMenuItem});
             this.leconToolStripMenuItem.Name = "leconToolStripMenuItem";
-            this.leconToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
+            this.leconToolStripMenuItem.Size = new System.Drawing.Size(74, 30);
             this.leconToolStripMenuItem.Text = "Lecon";
             // 
             // ajouterToolStripMenuItem
@@ -125,13 +128,6 @@
             this.validerToolStripMenuItem.Size = new System.Drawing.Size(172, 34);
             this.validerToolStripMenuItem.Text = "Valider";
             // 
-            // gererToolStripMenuItem1
-            // 
-            this.gererToolStripMenuItem1.Name = "gererToolStripMenuItem1";
-            this.gererToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
-            this.gererToolStripMenuItem1.Text = "Gerer";
-            this.gererToolStripMenuItem1.Click += new System.EventHandler(this.gererToolStripMenuItem1_Click);
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -145,7 +141,6 @@
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,7 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem validerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gererToolStripMenuItem1;
-        private System.Windows.Forms.BindingSource bdgSourceEleve;
     }
 }
 

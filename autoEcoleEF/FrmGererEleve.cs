@@ -20,11 +20,19 @@ namespace autoEcoleEF
             for (int i = 0; i < 30; i++)
                 this.cmbCredit.Items.Add(i);
             this.mesDonneesEF = mesDonneesEF;
+            this.bdgSourceEleve.DataSource = this.mesDonneesEF.eleves.ToList();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void FrmGererEleve_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

@@ -24,18 +24,13 @@ namespace autoEcoleEF
 
         }
 
-        private void eleveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmGererEleve f = new FrmGererEleve(this.mesDonneesEF);
-            f.MdiParent = this;
-            f.Show();
-        }
-
         private void gererToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmGererEleve f = new FrmGererEleve(this.mesDonneesEF);
             f.MdiParent = this;
             f.Show();
         }
+
+        
     }
 }

@@ -12,7 +12,7 @@ namespace autoEcoleEF
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class autoecoleEntities : DbContext
     {
         public autoecoleEntities()

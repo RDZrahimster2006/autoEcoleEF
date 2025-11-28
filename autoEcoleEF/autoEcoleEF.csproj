@@ -110,8 +110,8 @@
     <None Include="mdlAutoEcole.edmx.diagram">
       <DependentUpon>mdlAutoEcole.edmx</DependentUpon>
     </None>
-    <None Include="packages.config" />
     <None Include="Properties\DataSources\autoEcoleEF.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\eleve.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +142,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.5.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
